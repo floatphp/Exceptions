@@ -12,7 +12,7 @@
 
 namespace floatphp\Exceptions\Classes;
 
-use Exception;
+use \Exception;
 
 class FileException extends Exception
 {

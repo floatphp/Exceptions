@@ -10,9 +10,9 @@
  * @license   : MIT License
  */
 
-namespace floatphp\kernel\Exceptions;
+namespace floatphp\Exceptions\Kernel;
 
-use Exception;
+use \Exception;
 
 abstract class MiddlewareException extends Exception
 {
