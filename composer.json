@@ -1,5 +1,5 @@
 {
-  "name": "floatphp/interfaces",
+  "name": "floatphp/exceptions",
   "type": "library",
   "description": "Exceptions lib for floatPHP",
   "keywords": ["php","micro-framework","framework","PSR","ORM","jakiboy"],
