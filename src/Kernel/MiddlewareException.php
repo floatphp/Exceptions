@@ -10,7 +10,7 @@
  * @license   : MIT License
  */
 
-namespace floatphp\Exceptions\Kernel;
+namespace floatPHP\Exceptions\Kernel;
 
 use \Exception;
 
