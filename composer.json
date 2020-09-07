@@ -1,5 +1,6 @@
 {
   "name": "floatphp/exceptions",
+  "version" : "1.0.0-beta",
   "type": "library",
   "description": "Exceptions for floatPHP",
   "keywords": ["floatphp","micro-framework","framework","PSR","ORM","jakiboy"],
@@ -10,6 +11,11 @@
       "name": "Jihad Sinnaour",
       "email": "mail@jihadsinnaour.com",
       "role": "Founder"
+    },
+    {
+      "name": "Softgine",
+      "email": "e-mailing@soft-gine.com",
+      "role": "Developer"
     }
   ],
   "require": {
