@@ -25,7 +25,6 @@ class ConfigException extends Exception
 	{
 		$header = "[FloatPHPException][{$code}]";
 		$message = "{$header} Error : {$this->getError($code)}";
-		$message .= "<br>{$header} Line : {$this->getLine()} in {$this->getFile()}";
 		if ( $this->getMessage() ) {
 			$message .= " ({$this->getMessage()})";
 		}
@@ -42,6 +41,9 @@ class ConfigException extends Exception
 		switch ( intval($code) ) {
 			case 1:
 				return 'Invalid Application Configuration';
+				break;
+			case 2:
+				return 'Invalid Module Configuration';
 				break;
 		}
 		return 'Unknown error';
