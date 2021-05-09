@@ -8,6 +8,8 @@
  * @copyright : (c) 2017 - 2021 JIHAD SINNAOUR <mail@jihadsinnaour.com>
  * @link      : https://www.floatphp.com
  * @license   : MIT License
+ *
+ * This file if a part of FloatPHP Framework
  */
 
 namespace FloatPHP\Exceptions\Kernel;
@@ -21,10 +23,10 @@ class ConfigException extends Exception
 	 * @var int $code
 	 * @return string
 	 */
-	public function get($code = 1)
+	public function get(int $code = 1) : string
 	{
-		$header = "[FloatPHPException][{$code}]";
-		$message = "{$header} Error : {$this->getError($code)}";
+		$header = "[FloatPHPException]";
+		$message = "{$header} Error [{$code}] : {$this->getError($code)}";
 		if ( $this->getMessage() ) {
 			$message .= " ({$this->getMessage()})";
 		}
@@ -36,7 +38,7 @@ class ConfigException extends Exception
 	 * @var int $code
 	 * @return string
 	 */
-	private function getError($code)
+	private function getError(int $code) : string
 	{
 		switch ( intval($code) ) {
 			case 1:
@@ -45,7 +47,10 @@ class ConfigException extends Exception
 			case 2:
 				return 'Invalid Module Configuration';
 				break;
+			case 3:
+				return 'Invalid Database Configuration';
+				break;
 		}
-		return 'Unknown error';
+		return 'Invalid Configuration';
 	}
 }
