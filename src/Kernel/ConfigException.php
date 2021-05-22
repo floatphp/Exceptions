@@ -48,6 +48,9 @@ class ConfigException extends Exception
 				return 'Invalid Module Configuration';
 				break;
 			case 3:
+				return 'Invalid Route Configuration';
+				break;
+			case 4:
 				return 'Invalid Database Configuration';
 				break;
 		}
