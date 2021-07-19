@@ -16,7 +16,7 @@ namespace FloatPHP\Exceptions\Kernel;
 
 use FloatPHP\Classes\System\Exception;
 
-class ConfigException extends Exception
+class ConfigException extends \Exception
 {
 	/**
 	 * @access public
