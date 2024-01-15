@@ -15,15 +15,10 @@ declare(strict_types=1);
 
 namespace FloatPHP\Exceptions\Helpers;
 
-class CacheException extends \Exception
+class ConfigurableException extends \Exception
 {
-	public static function invalidCacheDriver($driver)
+	public static function invalidOrmObject()
 	{
-		return "Invalid cache driver : {$driver}";
+		return 'Invalid ORM Object';
 	}
-
-    public static function invalidCacheInstance()
-    {
-        return 'Invalid driver instance : Must implements CacheInterface';
-    }
 }

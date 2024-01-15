@@ -1,8 +1,9 @@
 # FloatPHP (Exceptions)
 
-<img src="https://www.floatphp.com/assets/img/floatphp.png" width="100" alt="Micro PHP framework">
+<img src="https://floatphp.com/assets/img/floatphp.png" width="100" alt="Micro PHP framework">
 
 FloatPHP **Exceptions Components**.
+This components defines framwork exceptions.
 
 ## ⚡ Installing:
 

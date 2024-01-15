@@ -13,17 +13,12 @@
 
 declare(strict_types=1);
 
-namespace FloatPHP\Exceptions\Helpers;
+namespace FloatPHP\Exceptions\Kernel;
 
-class CacheException extends \Exception
+class OrmException extends \Exception
 {
-	public static function invalidCacheDriver($driver)
+	public static function invalidDbObject()
 	{
-		return "Invalid cache driver : {$driver}";
+		return 'Invalid Db Object : Database not connected';
 	}
-
-    public static function invalidCacheInstance()
-    {
-        return 'Invalid driver instance : Must implements CacheInterface';
-    }
 }
