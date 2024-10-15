@@ -24,6 +24,6 @@ class CacheException extends \Exception
 
     public static function invalidCacheInstance()
     {
-        return 'Invalid driver instance : Must implements CacheInterface';
+        return 'Invalid cache instance : Must implements CacheInterface';
     }
 }
