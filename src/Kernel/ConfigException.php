@@ -3,7 +3,7 @@
  * @author     : Jakiboy
  * @package    : FloatPHP
  * @subpackage : Exceptions Component
- * @version    : 1.3.x
+ * @version    : 1.4.x
  * @copyright  : (c) 2018 - 2024 Jihad Sinnaour <mail@jihadsinnaour.com>
  * @link       : https://floatphp.com
  * @license    : MIT
@@ -15,8 +15,28 @@ declare(strict_types=1);
 
 namespace FloatPHP\Exceptions\Kernel;
 
-class ConfigurationException extends \Exception
+class ConfigException extends \Exception
 {
+    public static function invalidConfigFile(string $file) : string
+    {
+        return "Couldn't find app configuration file: '{$file}'";
+    }
+
+    public static function invalidConfigFormat(string $schema) : string
+    {
+        return "Invalid app configuration JSON format: '{$schema}'";
+    }
+
+    public static function invalidConfig(string $error, string $schema) : string
+    {
+        return "Invalid app configuration: '{$error}' in '{$schema}'";
+    }
+
+    public static function undefinedAppDir() : string
+    {
+        return 'Undefined global __APP_';
+    }
+
     public static function invalidApplicationConfiguration($error) : string
     {
         return "Invalid Application Configuration : {$error}";
